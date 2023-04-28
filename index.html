@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>Don't Open It Pls</title>
+</head>
+<body>
+    <div id="main">
+    <audio src="hello.ogg" id="music"></audio>
+    <p id="title1"> Dịch cái này đi </p>
+        <br>
+    <p id="title2"> โง่เท่านั้นที่เชื่อฉัน </p>
+    <button id="btn" onclick="playsong()"> Dịch Ngay </button>
+    
+    <img id="jumpscared" src="https://www.slashfilm.com/img/gallery/14-korean-horror-movies-you-need-to-see/intro-1661896332.jpg">
+    </div>
+<script>
+    let song = document.getElementById("music");
+    let image = document.getElementById("jumpscared");    
+
+    function playsong() {
+        document.getElementById("btn").style.display="none";
+        document.getElementById("title1").style.display="none";
+        document.getElementById("title2").style.display="none";
+        document.getElementById("jumpscared").style.display="block";
+        document.getElementById("jumpscared").requestFullscreen();
+        song.play()
+    }
+
+</script>
+</body>
+</html>

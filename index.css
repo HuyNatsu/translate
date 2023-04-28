@@ -1,0 +1,44 @@
+
+#title1 {
+    text-align: center;
+    font-size: 70px;
+    color: red;
+    animation: display 1s linear;
+    margin-bottom: -20px;
+    font-family: 'Inter', sans-serif;
+}
+
+#title2 {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 8px;
+    color: red;
+    animation: display 1s linear;
+    font-family: 'Inter', sans-serif;
+}
+
+#btn {
+    margin-top: 100px;
+    height: 150px;
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 26px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+}
+#btn:hover {
+    background-color: white;
+    color: black;
+}
+
+#jumpscared {
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+}
